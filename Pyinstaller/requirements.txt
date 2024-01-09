@@ -1,0 +1,13 @@
+customtkinter==5.2.1
+numpy==1.26.2
+packaging==23.2
+pandas==2.1.4
+pyinstaller==6.3.0
+pyinstaller-hooks-contrib==2023.11
+pyparsing==3.1.1
+python-dateutil==2.8.2
+pytz==2023.3.post1
+six==1.16.0
+tkinter==8.6
+tabulate==0.9.0
+

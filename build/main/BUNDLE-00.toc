@@ -1,0 +1,4 @@
+([('main',
+   '/Users/daphong/Documents/Studium/Hochschule '
+   'Aalen/W7/Mng_of_Log/Project/dist/main',
+   'EXECUTABLE')],)

@@ -1,0 +1,556 @@
+<h1 style='text-align: center;'> Produktionsliniensimulation </h1><table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Zeitplan</th>
+      <th>Station 1</th>
+      <th>Station 2</th>
+      <th>Station 3</th>
+      <th>Station 4</th>
+      <th>Station 5</th>
+      <th>Station 6</th>
+      <th>Station 7</th>
+      <th>Station 8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>08:00Uhr - 08:07Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>08:08Uhr - 08:15Uhr</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>08:16Uhr - 08:23Uhr</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>08:24Uhr - 08:31Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>08:32Uhr - 08:39Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>08:40Uhr - 08:47Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>08:48Uhr - 08:55Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>08:56Uhr - 09:03Uhr</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>09:04Uhr - 09:11Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+    </tr>
+    <tr>
+      <td>09:12Uhr - 09:19Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>09:20Uhr - 09:27Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>09:28Uhr - 09:35Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>09:36Uhr - 09:43Uhr</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>09:44Uhr - 09:51Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>09:52Uhr - 09:59Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>10:00Uhr - 10:07Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>10:08Uhr - 10:15Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>10:16Uhr - 10:23Uhr</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>10:24Uhr - 10:31Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>10:32Uhr - 10:39Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>10:40Uhr - 10:47Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>10:48Uhr - 10:55Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>10:56Uhr - 11:03Uhr</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>11:04Uhr - 11:11Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>11:12Uhr - 11:19Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>11:20Uhr - 11:27Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>11:28Uhr - 11:35Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>11:36Uhr - 11:43Uhr</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>11:44Uhr - 11:51Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>11:52Uhr - 11:59Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>12:00Uhr - 12:07Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>12:08Uhr - 12:15Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>12:16Uhr - 12:23Uhr</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>12:24Uhr - 12:31Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>12:32Uhr - 12:39Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>12:40Uhr - 12:47Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>12:48Uhr - 12:55Uhr</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>12:56Uhr - 13:03Uhr</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>13:04Uhr - 13:11Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>13:12Uhr - 13:19Uhr</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>13:20Uhr - 13:27Uhr</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>13:28Uhr - 13:35Uhr</td>
+      <td>-</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>13:36Uhr - 13:43Uhr</td>
+      <td>-</td>
+      <td>-</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>13:44Uhr - 13:51Uhr</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+      <td>AA (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>13:52Uhr - 13:59Uhr</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>B (Leerlauf: 2 Minuten)</td>
+    </tr>
+    <tr>
+      <td>14:00Uhr - 14:07Uhr</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>14:08Uhr - 14:15Uhr</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+      <td>D (Leerlauf: 1 Minuten)</td>
+    </tr>
+    <tr>
+      <td>14:16Uhr - 14:23Uhr</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>A (Leerlauf: 5 Minuten)</td>
+    </tr>
+    <tr>
+      <td>14:24Uhr - 14:31Uhr</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>Insgesamt wurden in <b>384 Minuten</b>, mit einer jeweiligen Bearbeitungszeit von <b>8 Minuten</b>, die folgende Menge an Produkten produziert:<br /> 32 mal Produkt A<br /> 8 mal Produkt B<br /> 0  mal Produkt C<br /> 16 mal Produkt D<br /> 0  mal Produkt E<br /> <br /> <b> Effizienz</b> der Produktion: 76.667%
